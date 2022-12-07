@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home- Courses</title>
+    <style>
+        h1, h2 {
+            text-align: center;
+            margin: 1em 0;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        th{
+            padding: 0.5em;
+            text-align: center;
+        }
+        tr td{
+            text-align: center;
+            padding: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>The header</h1>
+    <h2>The table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Course #</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tbody id="displayAllCourses"></tbody>
+    </table>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
