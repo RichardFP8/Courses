@@ -30,6 +30,11 @@ function displayAllCourses(arrayCourses) {
 
             }
         }
-
+        let deleteLinkCell = row.insertCell(-1);
+        let anchor = document.createElement("a");
+        anchor.href = `confirm-delete.html?courseId=${x.id}`;
+        anchor.text = "Delete course";
+        anchor.target= "_blank";
+        deleteLinkCell.appendChild(anchor);
     }
 }
