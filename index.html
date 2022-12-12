@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home- Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        h1, h2 {
+        h1,
+        h2 {
             text-align: center;
             margin: 1em 0;
         }
+
         table {
             margin: 0 auto;
             border-collapse: collapse;
             border: 1px solid black;
         }
-        th{
+
+        th {
             padding: 0.5em;
             text-align: center;
         }
-        tr td{
+
+        tr td {
             text-align: center;
             padding: 0.5em;
         }
     </style>
 </head>
+
 <body>
     <h1>The header</h1>
     <h2>The table</h2>
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Department</th>
@@ -38,6 +46,11 @@
         </thead>
         <tbody id="displayAllCourses"></tbody>
     </table>
+    <button id="goToNewCoursesPage" type="button" class="btn btn-success my-5">New Course</button>
     <script src="./scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

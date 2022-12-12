@@ -3,6 +3,7 @@ window.onload = function () {
     fetch("http://localhost:8081/api/courses")
         .then(response => response.json())
         .then(data => displayAllCourses(data))
+    document.getElementById("goToNewCoursesPage").onclick = () => window.location.href = "newcourses.html";
 }
 function displayAllCourses(arrayCourses) {
     const tableBody = document.getElementById("displayAllCourses")

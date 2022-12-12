@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>New Courses Page</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="display-3 m-4">Welcome</h1>
+    </header>
+    <main>
+        <form class="container">
+
+            <label for="departmentInput" class="form-label mt-2">Department</label>
+            <input id="departmentInput" type="text" class="form-control w-25" />
+
+            <label for="courseNumberInput" class="form-label mt-2">Course Number</label>
+            <input id="courseNumberInput" type="text" class="form-control w-25" />
+
+            <label for="courseNameInput" class="form-label mt-2">Course Name</label>
+            <input id="courseNameInput" type="text" class="form-control w-25" />
+
+            <label for="instructorInput" class="form-label mt-3">Instructor Name</label>
+            <input id="instructorInput" type="text" class="form-control w-25" />
+
+            <label for="startDateInput" class="form-label mt-3">Start Date</label>
+            <input id="startDateInput" type="date" class="form-control w-25" />
+
+            <label for="numOfDaysInput" class="form-label mt-3">Course length (in days)</label>
+            <input id="numOfDaysInput" type="number" min="1" max="50" class="form-control w-25" />
+
+            <button id="addCourseToAPI" type="button" class="btn btn-info mt-4">Add course!</button>
+
+        </form>
+        <p id="message" class="m-5"></p>
+    </main>
+    <script src="./scripts/newcourses.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
