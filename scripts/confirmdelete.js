@@ -22,7 +22,6 @@ window.onload = () => {
 
 }
 function deleteCourse() {
-   
     fetch(`http://localhost:8081/api/courses/${id}`, {
         method: "DELETE"
     }).then(response => response.json())

@@ -19,7 +19,7 @@ function displayAllCourses(arrayCourses) {
                     cell.innerHTML = x[y];
                     break;
                 case "courseName":
-                    
+
                     let anchorCell = row.insertCell(-1);
                     let anchor = document.createElement("a");
                     anchor.href = 'details.html?courseid=' + x["id"];
@@ -34,7 +34,7 @@ function displayAllCourses(arrayCourses) {
         let anchor = document.createElement("a");
         anchor.href = `confirm-delete.html?courseId=${x.id}`;
         anchor.text = "Delete course";
-        anchor.target= "_blank";
+        anchor.target = "_blank";
         deleteLinkCell.appendChild(anchor);
     }
 }
